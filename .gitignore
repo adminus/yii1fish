@@ -1,3 +1,4 @@
 test.sublime-workspace
+test.sublime-project
 *.geany
 !.gitignore

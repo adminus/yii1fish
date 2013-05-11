@@ -1,0 +1,22 @@
+2013/05/11 21:42:08 [error] [exception.CException] exception 'CException' with message 'CWebApplication and its behaviors do not have a method or closure named "runEnd".' in /home/odmin/projects/yii1fish/protected/yii/base/CComponent.php:266
+Stack trace:
+#0 /home/odmin/projects/yii1fish/index.php(13): CComponent->__call('runEnd', Array)
+#1 /home/odmin/projects/yii1fish/index.php(13): CWebApplication->runEnd('frontend')
+#2 {main}
+REQUEST_URI=/index.php?r=site/page&view=about
+HTTP_REFERER=http://yii1fish/
+---
+2013/05/11 21:55:35 [error] [exception.CException] exception 'CException' with message 'The view path "/home/odmin/projects/yii1fish/protected/views/frontend" is not a valid directory.' in /home/odmin/projects/yii1fish/protected/yii/web/CWebApplication.php:445
+Stack trace:
+#0 /home/odmin/projects/yii1fish/protected/yii/base/CComponent.php(153): CWebApplication->setViewPath('/home/odmin/pro...')
+#1 /home/odmin/projects/yii1fish/protected/behaviors/WebApplicationEndBehavior.php(37): CComponent->__set('viewPath', '/home/odmin/pro...')
+#2 /home/odmin/projects/yii1fish/protected/yii/base/CComponent.php(559): WebApplicationEndBehavior->changeModulePaths(Object(CEvent))
+#3 /home/odmin/projects/yii1fish/protected/behaviors/WebApplicationEndBehavior.php(29): CComponent->raiseEvent('onModuleCreate', Object(CEvent))
+#4 /home/odmin/projects/yii1fish/protected/behaviors/WebApplicationEndBehavior.php(21): WebApplicationEndBehavior->onModuleCreate(Object(CEvent))
+#5 [internal function]: WebApplicationEndBehavior->runEnd('frontend')
+#6 /home/odmin/projects/yii1fish/protected/yii/base/CComponent.php(261): call_user_func_array(Array, Array)
+#7 /home/odmin/projects/yii1fish/index.php(13): CComponent->__call('runEnd', Array)
+#8 /home/odmin/projects/yii1fish/index.php(13): CWebApplication->runEnd('frontend')
+#9 {main}
+REQUEST_URI=/
+---
